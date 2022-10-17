@@ -15,24 +15,24 @@
 <body>
   <header>
     <div class="logo__wrapper">
-      <img src="./logos/logo_yard_sale.svg" alt="">
+      <img src="../logos/logo_yard_sale.svg" alt="">
     </div>
   </header>
   <main>
+    <section class="text__section">
+      <h1>Email has been sent!!</h1>
+      <p>Please check your inbox for instructions on how to reset the password</p>
+    </section>
+    <section class="icon__section">
+      <div class="icon__wrapper">
+        <img src="../icons/email.svg" alt="">
+      </div>
+    </section>
     <section>
-      <h1 class="title">Create a new password</h1>
-      <p class="subtitle">Enter a new password for your account</p>
-      <form action="#" class="change-pass__form">
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter new password...">
-        </div>
-        <div class="input-group">
-          <label for="re-password">Re-enter password</label>
-          <input type="password" id="re-password" placeholder="Enter new password...">
-        </div>
-        <button>Confirm</button>
-      </form>
+      <button class="login__button">Login</button>
+    </section>
+    <section class="resend__section">
+      <p>Didn't receive the email? <a href="#">Resend</a></p>
     </section>
   </main>
 </body>
