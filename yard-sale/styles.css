@@ -2,12 +2,13 @@
   --white: #FFFFFF;
   --black: #000000;
   --dark: #232830;
-  --very-light-pink: #C7C7C7;
+  --very-light-gray: #C7C7C7;
   --text-input-field: #F7F7F7;
   --hospital-green: #ACD9B2;
 }
 
 *, *::after, *::before {
+  font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,7 +19,82 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
   font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
 }
 
+header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+section {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.logo__wrapper{
+  width: 40%;
+  margin: 8rem 0;
+}
+
+.change-pass__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.input-group input{
+  padding: 1rem;
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 1rem;
+  outline-color: var(--dark);
+}
+
+.change-pass__form button {
+  padding: 1.5rem;
+  border: none;
+  background-color: var(--hospital-green);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__wrapper{
+    display: none;
+  }
+}
