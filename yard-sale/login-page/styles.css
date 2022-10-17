@@ -1,0 +1,138 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-gray: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+}
+
+*, *::after, *::before {
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  
+  padding: 0.8rem 1.6rem;
+
+  font-size: 1.6rem;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+section {
+  width: 100%;
+  display: relative;
+}
+
+.logo__wrapper{
+  width: 40%;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.input-group input {
+  padding: 1rem;
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 1rem;
+  outline-color: var(--dark);
+}
+
+.login__form button {
+  padding: 1.5rem;
+  margin-top: 1rem;
+  color: var(--white);
+  background-color: var(--hospital-green);
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.more-container {
+  max-width: 40rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.more-container a {
+  text-decoration: none;
+  color: var(--hospital-green);
+  font-size: 1.4rem;
+}
+
+.more-container button {
+  color: var(--hospital-green);
+  border: 0.1rem solid var(--hospital-green);
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    place-items: center;
+  }
+  
+  main {
+    width: 100%;
+  }
+
+  .logo__wrapper{
+    display: none;
+  }
+
+  .more-container {
+    margin-top: 3rem;
+    justify-content: flex-start;
+    gap: 6rem;
+  }
+}
